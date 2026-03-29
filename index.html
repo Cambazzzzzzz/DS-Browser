@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DemlikSearch</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+body{background:#0b0f1a;color:white;overflow-x:hidden}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(10,15,30,0.9);
+z-index:1000;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+header h1{font-weight:800;letter-spacing:1px}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-weight:400;
+transition:0.25s;
+}
+
+nav a:hover{opacity:0.6}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:radial-gradient(circle at 30% 30%,#16213a,#0b0f1a 60%);
+padding:0 20px;
+}
+
+.hero h2{
+font-size:64px;
+font-weight:800;
+margin-bottom:20px;
+background:linear-gradient(90deg,#ffffff,#7aa2ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+font-size:20px;
+max-width:750px;
+opacity:0.8;
+}
+
+.btn{
+margin-top:30px;
+padding:15px 40px;
+border-radius:14px;
+background:linear-gradient(90deg,#7aa2ff,#4c6fff);
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:0.25s;
+display:inline-block;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+box-shadow:0 10px 30px rgba(76,111,255,0.4);
+}
+
+.section{
+padding:120px 40px;
+text-align:center;
+}
+
+.section h3{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+background:linear-gradient(145deg,#111a2e,#0e1525);
+padding:35px;
+border-radius:20px;
+transition:0.3s;
+border:1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover{
+transform:translateY(-10px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+footer{
+padding:50px;
+text-align:center;
+background:#05070d;
+margin-top:60px;
+opacity:0.7;
+}
+
+</style>
+</head>
+<body>
+
+<header>
+<h1>DemlikSearch</h1>
+<nav>
+<a href="#ozellik">Özellikler</a>
+<a href="#hakkinda">Hakkında</a>
+<a href="#indir">İndir</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>DemlikSearch</h2>
+<p>Tamamen kişisel ve özelleştirilebilir, Türk tarayıcısı!</p>
+<a href="https://drive.google.com/u/0/uc?id=19TGl1pOfq04xtpdqWCmHYsVyMBIE3E8-&export=download" class="btn">Demlik Search İndir</a>
+</section>
+
+<section class="section" id="ozellik">
+<h3>Özellikler</h3>
+<div class="cards">
+<div class="card">
+<h4>Tamamen Gizli Dolaşım</h4>
+<p>Özel vpn ve proxy ayarları sayesinde, hiçbir engele takılmadan dilediğiniz siteye girebilirsiniz.</p>
+</div>
+<div class="card">
+<h4>FPS Artışı</h4>
+<p>Arka plan işlemleri azaltıldığı için fps ya da cpu seviyenizde fazla artış yaşatmaz.</p>
+</div>
+<div class="card">
+<h4>Gizlilik</h4>
+<p>Verilerinizi çekemez, ya da ip adresinizi kullanamaz.</p>
+</div>
+<div class="card">
+<h4>Kişiselleştirme</h4>
+<p>Tema, sayfa ayarları tamamen özelleştirilebilir.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="indir">
+<h3>DemlikSearch</h3>
+<p>DS Browser v3.0</p>
+<a href="https://drive.google.com/file/d/1UA3vPhTW5u34Uj0y0_lwkirJkRCmMT2Z/view?usp=sharing" class="btn">İndir</a>
+</section>
+
+<footer>
+<p>© 2026 CMS Team</p>
+</footer>
+
+</body>
+</html>

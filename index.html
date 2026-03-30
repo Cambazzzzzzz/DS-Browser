@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DemlikSearch</title>
+    <title>DemlikSearch | Geleceğin İnterneti</title>
     <link rel="icon" href="logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
 
@@ -28,7 +28,7 @@
             line-height: 1.6;
         }
 
-        /* Reklam Alanları İçin Stil Ayarı (Reklamlar sayfa düzenini bozmasın diye) */
+        /* Reklam Alanları İçin Stil Ayarı */
         ins.adsbygoogle {
             background: transparent !important;
             margin: 20px auto !important;
@@ -80,9 +80,11 @@
             text-align: center; padding: 0 20px;
         }
 
+        /* --- BÜYÜTÜLEN LOGO ALANI --- */
         .hero-logo {
-            width: 120px; margin-bottom: 30px;
-            filter: drop-shadow(0 0 30px var(--accent-glow));
+            width: 180px; /* Logo boyutu 120px'den 180px'e çıkarıldı */
+            margin-bottom: 30px;
+            filter: drop-shadow(0 0 40px var(--accent-glow)); /* Gölge efekti de biraz artırıldı */
             animation: float 6s ease-in-out infinite;
         }
 
@@ -195,6 +197,10 @@
             .bento-item.large, .bento-item.wide { grid-column: span 1; grid-row: span 1; }
             .img-1, .img-2, .img-3, .img-4 { grid-column: span 12; height: 300px; }
             header nav { display: none; }
+            /* Mobil için logonun aşırı büyük kalmaması adına bir ayar */
+            .hero-logo {
+                width: 140px;
+            }
         }
     </style>
 </head>
